@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .profile h1 {
+            margin: 10px 0;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .project {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .project h2 {
+            margin: 10px 0;
+        }
+        .project p {
+            color: #555;
+        }
+        @media (max-width: 600px) {
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+    </header>
+    <div class="container">
+        <div class="profile">
+            <img src="profile.jpg" alt="Foto de Perfil">
+            <h1>Seu Nome</h1>
+            <p>Desenvolvedor Web</p>
+        </div>
+        <div class="projects">
+            <div class="project">
+                <img src="project1.jpg" alt="Projeto 1">
+                <h2>Projeto 1</h2>
+                <p>Descrição do projeto 1.</p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Projeto 2">
+                <h2>Projeto 2</h2>
+                <p>Descrição do projeto 2.</p>
+            </div>
+            <div class="project">
+                <img src="project3.jpg" alt="Projeto 3">
+                <h2>Projeto 3</h2>
+                <p>Descrição do projeto 3.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
